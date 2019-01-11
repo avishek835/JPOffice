@@ -3,8 +3,8 @@ package dummyPrograms;
 public class StringPrograms {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
+		//compare string
 		String A= "Avishek";
 		String B= "Avishek";
 		
@@ -13,7 +13,7 @@ public class StringPrograms {
 		else
 			System.out.println("NotMatching");
 		
-		
+		// reverse a string
 		 String str = "Avishek";
 	    	StringBuilder sb = new StringBuilder(str);
 	    	System.out.println(" string is:" +sb.toString());
