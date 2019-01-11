@@ -1,5 +1,7 @@
 package dummyPrograms;
 
+import java.util.ArrayList;
+
 public class LogicalPrograms {
 	 static String str;
 	public static void main(String[] args) 
@@ -33,14 +35,14 @@ public class LogicalPrograms {
         System.out.println("--------Using reverse method-----------");
         
         
-        String str = "Avishek";
-    	StringBuilder sb = new StringBuilder(str);
-    	System.out.println(" string is:" +sb.toString());
-        System.out.println("Reversed string is:");
-        System.out.println(sb.reverse().toString());//it reverse the string and tostring return the same string
+       
         
-        StringBuffer SB=new StringBuffer("Avi");
-        System.out.println(SB.reverse());
+        ArrayList<Integer> al=new ArrayList<Integer>();
+        al.add(20);
+        al.add(30);
+        System.out.println(al);
+        System.out.println(al.get(0));
+        System.out.println(al.get(1));
 	}
 	
 	
