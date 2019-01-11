@@ -10,8 +10,14 @@ public class StringPrograms {
 		
 		if(A==B)
 			System.out.println("Matching");
-		else
+		else {
 			System.out.println("NotMatching");
+		}
+		System.out.println(A.length());
+		System.out.println(A.substring(0, 3));
+		System.out.println(A.charAt(3));
+		
+		
 		
 		// reverse a string
 		 String str = "Avishek";
