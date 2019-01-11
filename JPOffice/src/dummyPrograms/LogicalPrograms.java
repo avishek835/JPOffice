@@ -38,6 +38,9 @@ public class LogicalPrograms {
     	System.out.println(" string is:" +sb.toString());
         System.out.println("Reversed string is:");
         System.out.println(sb.reverse().toString());//it reverse the string and tostring return the same string
+        
+        StringBuffer SB=new StringBuffer("Avi");
+        System.out.println(SB.reverse());
 	}
 	
 	
