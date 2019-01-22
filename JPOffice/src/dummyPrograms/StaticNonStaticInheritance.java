@@ -15,7 +15,8 @@ public class StaticNonStaticInheritance extends BaseClass {
 		 System.out.println("I can write as well");
 	 }
 	 
-	 StaticNonStaticInheritance()//This is constructor and at the time of object creation automatically constructor block will be called.
+	 StaticNonStaticInheritance()//This is constructor and at the time 
+	 //of object creation automatically constructor block will be called.
 	 {
 		 System.out.println("I am in Constructor Class");
 	 }
@@ -26,49 +27,21 @@ public class StaticNonStaticInheritance extends BaseClass {
 		System.out.println("I can swim hard"); 
 	 }
 	
-	//public static void main(String[] args)
-//	@Test(priority=2)
-//	
-//	public void helloworld(){
-//		// TODO Auto-generated method stub
-//		
-//		System.out.println("Hello World");
-//		System.setProperty("webdriver.chrome.driver","E:\\Avishek\\SeleniumProjects\\Drivers\\chromedriver_win32\\chromedriver.exe");
-//		
-//		driver=new ChromeDriver();
-//		driver.get("http://www.google.com");
-//		 element= driver.findElement(By.name("q"));
-//		 element.sendKeys("Cheese!");
-//		 element.submit();
-//	}
+
 	
-	/*@Test(enabled=true)
-	public void helloworld1() throws IOException {
-		System.setProperty("webdriver.chrome.driver","E:\\Avishek\\SeleniumProjects\\Drivers\\chromedriver_win32\\chromedriver.exe");
-		
-		driver=new ChromeDriver();
-		driver.get("http://103.94.84.74:7085/");
-		File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		try {
-		FileUtils.copyFile(screenshotFile, new File("E://Avishek//ScreenShot//1.png"));
-		}
-		catch(IOException e) {
-			e.printStackTrace();
-		}
-		driver.manage().window().maximize();
-		element= driver.findElement(By.xpath("//*[@id=\"mnuAboutUs\"]/a"));
-		element.click();
-		element=driver.findElement(By.xpath("//*[@id=\"mnuTalentDirectory\"]/a"));
-		element.click();
-		driver.close();
-	}*/
+	
+	
 	
 	public static void main(String[] args)
 	{
 		int a=5;//local variable
-		System.out.println("Local Variable "+ a);
-		System.out.println("Global Variable "+ b);
-		StaticNonStaticInheritance A=new StaticNonStaticInheritance();
+		System.out.println("Local Variable "+ a);//5
+		System.out.println("Global Variable "+ b);//10
+		StaticNonStaticInheritance A=new StaticNonStaticInheritance();//constructor will call
+		 BaseClass bc=new BaseClass();//base class object created
+		 bc.swim();//I can swim
+		 bc.walk();
+		 bc.laugh();
 		System.out.println("Non static variable "+ A.c);
 		read();//static method
 		A.write();//non static method
