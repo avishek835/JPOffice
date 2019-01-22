@@ -7,7 +7,8 @@ public class StringPrograms {
 		//compare string
 		String A= "Avishek";
 		String B= "Avishek";
-		
+		int C=2;
+		int D=1;
 		if(A==B)
 			System.out.println("Matching");
 		else {
@@ -16,6 +17,11 @@ public class StringPrograms {
 		System.out.println(A.length());
 		System.out.println(A.substring(0, 3));
 		System.out.println(A.charAt(3));
+		if(C>D)
+			System.out.println("bigger");
+		else {
+			System.out.println("Not bigger");
+		}
 		
 		
 		
