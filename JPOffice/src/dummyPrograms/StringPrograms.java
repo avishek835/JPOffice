@@ -7,6 +7,11 @@ public class StringPrograms {
 		//compare string
 		String A= "Avishek";
 		String B= "Avishek";
+		StringBuffer STBR = new StringBuffer(B);
+		System.out.println(STBR.toString());
+		System.out.println(STBR.reverse());
+		System.out.println(STBR.toString());
+		
 		int C=2;
 		int D=1;
 		if(A==B)
