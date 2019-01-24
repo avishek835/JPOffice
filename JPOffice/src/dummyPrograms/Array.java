@@ -31,12 +31,13 @@ public class Array {
 		 hm.put("2", "1");//not synchronised
 		 hm.put("0", "1");
 		 hm.put("1", "2");
-		 hm.put("1", "3");
+		 
 		 System.out.println(hm);
-		 Hashtable ht=new Hashtable();
+		 Hashtable<String, String> ht=new Hashtable<String, String>();
+		 ht.put("2", "C");
 		 ht.put("0", "A");//synchronized
 		 ht.put("1", "B");
-		 ht.put("0", "C");
+		
 		 System.out.println(ht);
 		 
 		 
