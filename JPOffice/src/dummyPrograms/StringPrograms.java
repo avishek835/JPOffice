@@ -39,9 +39,7 @@ public class StringPrograms {
 	        
 	        StringBuffer SB=new StringBuffer("Avi");
 	        System.out.println(SB.reverse());
-	        
-	        
-
+	   
 	}
 
 }
